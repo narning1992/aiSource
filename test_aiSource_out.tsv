@@ -1,4 +1,4 @@
-id	predicted source	probability_cattle	probability_chicken	probability_environment	probability_bird	probability_sheep
+id	predicted_source	probability_cattle	probability_chicken	probability_environment	probability_bird	probability_sheep
 21310	cattle	0.472	0.464	0.0	0.004	0.06
 21311	chicken	0.182	0.644	0.019	0.015	0.14
 21312	chicken	0.118	0.866	0.001	0.013	0.001

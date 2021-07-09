@@ -101,7 +101,7 @@ def main():
     # put prediction into dataframe for outputting
     content_df=[list(label), list(source_pred)]
     content_df += [ list(x) for x in source_probs]
-    column_headers=["id", "predicted source"]
+    column_headers=["id", "predicted_source"]
     column_headers += headers
     df=pd.DataFrame(dict(zip(column_headers, content_df))).round(decimals=3)
 
