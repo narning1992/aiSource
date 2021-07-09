@@ -9,6 +9,7 @@ import pandas as pd
 
 
 def load_data(input_data):
+    # load input cgMLST from tsv
     data = pd.read_csv(input_data, sep="\t", header=0)
 
     # check if id column is in the data
@@ -41,6 +42,8 @@ def load_data(input_data):
 
 
 def make_predictions(model,  data):
+    # make predictions using the loaded XGBoost model
+
     # define our source labels
     source_dict = {
         0: "cattle",
