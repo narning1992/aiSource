@@ -1,13 +1,9 @@
 # aiSource
-Repository for the paper "Machine learning to predict the source of campylobacteriosis using whole genome data"
 
-## Abstract
-Campylobacteriosis is among the world’s most common foodborne illnesses, caused predominantly by the bacterium Campylobacter jejuni. Effective interventions require determination of the infection source which is challenging as transmission occurs via multiple sources such as contaminated meat, poultry, and drinking water. Strain variation has allowed source tracking based upon allelic variation in multi-locus sequence typing (MLST) genes allowing isolates from infected individuals to be attributed to specific animal or environmental reservoirs. However, the accuracy of probabilistic attribution models has been limited by the ability to differentiate isolates based upon just 7 MLST genes. Here, we broaden the input data spectrum to include core genome MLST (cgMLST) and whole genome sequences (WGS), and implement multiple machine learning algorithms, allowing more accurate source attribution. We increase attribution accuracy from 64% using the standard iSource population genetic approach to 71% for MLST, 85% for cgMLST and 78% for kmerized WGS data using machine learning. To gain insight beyond the source model prediction, we use Bayesian inference to analyse the relative affinity of C. jejuni strains to infect humans and identified potential differences, in source-human transmission ability among clonally related isolates in the most common disease causing lineage (ST-21 clonal complex). Providing generalizable computationally efficient methods, based upon machine learning and population genetics, we provide a scalable approach to global disease surveillance that can continuously incorporate novel samples for source attribution and identify fine-scale variation in transmission potential
-
-
-## Turtorial
 ### Introduction
-This repository is meant to allow you to attribute sources of human campylobacter courses with the algorithm that we call **aiSource** named after the previously most commonly used iSource from cgMLST data. The accuracy of this prediction should be ~84% based on realistic source composition in human cases. The different files in this repository do the following.
+Repository for the paper ["Machine learning to predict the source of campylobacteriosis using whole genome data"](https://doi.org/10.1101/2021.02.23.432443 )
+
+This repository should allow you to attribute sources of human campylobacter courses with the algorithm that we named **aiSource** after the previously most commonly used [iSource](https://doi.org/10.1371/journal.pgen.1000203) from core-genome multi-locus-sequence-type ([cgMLST](https://doi.org/10.1128/JCM.00080-17 )) data. The accuracy of this prediction should be ~84% based on realistic source composition in human cases. The different files in this repository do the following.
 
 * aiSource_prediction.py - The python script allowing you to predict sources
 * aiSource_classifier_object.p - A pickle object containing the XGBoost classifier trained in our paper
@@ -20,11 +16,14 @@ Using aiSource you can easily predict any human campylobacter cgMLST samples. Ca
 
 ![Export dataset from PubMLST](./export_dataset.png)
 
-The resulting table should be saved with "Export table(text)" and can now be used for the prediction. If instead you want to use the dataset we used in the paper you can find it [here](https://pubmlst.org/bigsdb?db=pubmlst_campylobacter_isolates&page=query&project_list=102&submit=1). 
+The resulting table should be saved with "Export table(text)" and can now be used for the prediction!
 
-Otherwise if you have whole genomes from campy you can upload a fasta of the genome get the corresponding cgMLST patterns [here](https://pubmlst.org/bigsdb?db=pubmlst_campylobacter_seqdef&l=1&page=batchSequenceQuery). Please choose the C. jejuni. C.coli cgMLST v1.0 in the "Please select locus/scheme" menu.
+If instead you want to use the dataset we used in the paper you can find it [here](https://pubmlst.org/bigsdb?db=pubmlst_campylobacter_isolates&page=query&project_list=102&submit=1). 
+
+Otherwise if you have whole genomes from campy you can upload a fasta of the genome get the corresponding cgMLST patterns [here](https://pubmlst.org/bigsdb?db=pubmlst_campylobacter_seqdef&l=1&page=batchSequenceQuery). Please choose the C. jejuni. C.coli cgMLST v1.0 in the "Please select locus/scheme" menu. The resulting table should again be saved with "Export table(text)".
 
 ### Setting up the prediction
+
 
 ### Source attribution using aiSource
 
