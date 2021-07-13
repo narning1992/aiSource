@@ -13,7 +13,7 @@ The different files in this repository do the following.
 * requirements.txt - test file containing all required python packages. Further down we explain how to set this up
 
 ### Dataset acquisition
-Using aiSource you can conveniently predict any human campylobacter cgMLST samples. Campylobacter sources can be downloaded from the fantastic [pubmlst](pubmlst.org) database, which contains a lot of different pathogens. The campylobacter database can be found [here](https://pubmlst.org/bigsdb?db=pubmlst_campylobacter_isolates&l=1&page=query). At the bottom of the page you can export the samples using the field "Dataset" next to the Export field with the little save icon. This brings you to the Export dataset field where you can choose as many provenance fields as you want just make sure you include id and under "Schemes" you choose All loci>Typing>C. Jejuni/C. coli cgMLST v1.0 as shown below.
+Using aiSource you can conveniently predict any human campylobacter cgMLST samples. Campylobacter sources can be downloaded from the fantastic [PubMLST](https://pubmlst.org) database, which contains a lot of different pathogens. The campylobacter database can be found [here](https://pubmlst.org/bigsdb?db=pubmlst_campylobacter_isolates&l=1&page=query). At the bottom of the page you can export the samples using the field "Dataset" next to the Export field with the little save icon. This brings you to the Export dataset field where you can choose as many provenance fields as you want just make sure you include id and under "Schemes" you choose All loci>Typing>C. Jejuni/C. coli cgMLST v1.0 as shown below.
 
 ![Export dataset from PubMLST](./export_dataset.png)
 
