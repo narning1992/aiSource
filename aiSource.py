@@ -110,12 +110,12 @@ def retrain_clf(model, data, labels):
     accuracy_report = classification_report(
             labels_test,
             labels_predict,
-            target_names=label_dict.values()))
+            target_names=label_dict.values())
     print(accuracy_report)
     print("Now retraining with the whole data")
     model.fit(data, labels)
     print("Finished training")
-    return((label_dict, model), accuracy_report))
+    return((label_dict, model), accuracy_report)
 
 
 def make_predictions(model,  data, label_dict):
@@ -209,7 +209,7 @@ def main():
         # put prediction into dataframe for outputting
         content_df=[list(ids), list(source_pred)]
         content_df += [list(x) for x in source_probs]
-        column_headers=["id", "predicion"]
+        column_headers=["id", "prediction"]
         column_headers += headers
         df=pd.DataFrame(
             dict(zip(column_headers, content_df))).round(
