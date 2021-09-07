@@ -34,7 +34,8 @@ for pip use
 ```
     pip3 install -r requirements.txt
 ```
-(this is the most straightforward. See [here](https://pip.pypa.io/en/stable/installing/)
+(this is the most straightforward. See [here](https://pip.pypa.io/en/stable/installation/) how to install pip.) 
+
 for conda use
 ```
     conda create --name aiSource python=3.8
