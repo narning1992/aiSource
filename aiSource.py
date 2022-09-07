@@ -43,7 +43,7 @@ def load_data(input_data, retrain_flag):
 
     # drop rows with more than 10% missingness
     before = data.shape[0]
-    data.dropna(thresh=134, axis=0, inplace=True)
+    data.dropna(thresh=1343-134, axis=0, inplace=True)
     print(
     "Dropped {} rows because over 10% missingness. These won't show up in the output".format(
         before -
