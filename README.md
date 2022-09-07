@@ -25,7 +25,7 @@ Otherwise if you have whole genomes from campy you can upload a fasta of the gen
 
 ### Setting up the prediction
 first you should download this repository with `git clone https://github.com/narning1992/aiSource.git`
-then change into the folder you just downloaded with `cd iSource`.
+then change into the folder you just downloaded with `cd aiSource`.
 this is where you will do the analysis so your input files should also be stored in this folder. 
 
 In order to run aiSource you will need to install a few packages and make sure that you got python 3 installed. Depending on your preferred package manager you can do the following
